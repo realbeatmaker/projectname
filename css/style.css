@@ -216,3 +216,7 @@ header {
 .mob-btn {
   display: none;
 }
+
+#wave {
+  width: 100%;
+}
