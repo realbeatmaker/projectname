@@ -102,13 +102,10 @@ header {
   justify-content: space-between;
 }
 
-.card-info {
-  max-width: 361px;
+.card-info {max-width: 361px;
 }
 
-.card-info-img {
-  display: flex;
-}
+.card-info-img {display: flex;}
 
 .info-title {
   font-size: 20px;
@@ -145,9 +142,7 @@ header {
   max-width: 240px;
 }
 
-.audio-holder {
-  width: 548px;
-}
+.audio-holder {width: 548px;}
 
 .control {
   position: absolute;
@@ -174,8 +169,50 @@ header {
   flex: 1;
 }
 
+
+
 .audio-block {
   background-color: #242424;
   display: flex;
   margin-top: 61px;
+}
+
+@media (max-width: 1120px) 
+{
+  .container{padding: 0 20px;}
+}
+
+@media (max-width: 992px)
+{
+  .header-info-block {flex-direction: column;}
+  .card-about {
+    margin-top: 60px;
+    align-self: flex-end;
+  }
+  .audio-container{order: -1;}
+}
+
+@media (max-width: 756px) 
+{
+
+}
+
+@media (max-width: 578px) 
+{
+  .navigation-holder {display: none;}
+  .join {display: none;}
+  .header-title-text {font-size: 60px;}
+  .mob-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 60px;
+  }
+  .audio-holder, .card-about{width: 100%;}
+  .audio-block img {display: none;}
+  .control i {height: 48px;}
+}
+
+.mob-btn {
+  display: none;
 }
